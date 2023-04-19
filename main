@@ -1,0 +1,12 @@
+count = 0
+list = []
+while count != 5:
+    for position in range(0, 5):
+        value = list.append(int(input(f'Digite um valor para a posição {position}: ')))
+        count += 1
+bigger = max(list)
+smaller = min(list)
+print('=-'*20)
+print(f'Você digitou os valores {list}')
+print(f'O maior valor digitado foi {bigger} na posição {list.index(bigger)}')
+print(f'O menor valor digitado foi {smaller} na posição {list.index(smaller)}')
